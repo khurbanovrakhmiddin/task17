@@ -13,6 +13,148 @@ class GetRepoImpl extends GetRepo {
   @override
   Future<Either<AppFailure, StockResponse>> getList() async {
     try {
+
+      return Right(
+        StockResponse.fromJson({
+          "data": [
+            {
+              "id": 2864,
+              "companyName": "Amesite Inc",
+              "tradingSymbol": "AMST",
+              "logo": "https://ailatapi.kz/media/logos/AMST.png",
+              "currency": "USD",
+              "shariahCheck": true,
+              "analysisDate": "2025-05-18T00:38:07.000Z",
+              "isCompliant": false,
+              "price": {
+                "price": 2.78,
+                "changePercent": -7.95
+              }
+            },
+            {
+              "id": 2864,
+              "companyName": "Amesite Inc",
+              "tradingSymbol": "AMST",
+              "logo": "https://ailatapi.kz/media/logos/AMST.png",
+              "currency": "USD",
+              "shariahCheck": true,
+              "analysisDate": "2025-05-18T00:38:07.000Z",
+              "isCompliant": false,
+              "price": {
+                "price": 2.78,
+                "changePercent": -7.95
+              }
+            },     {
+              "id": 2864,
+              "companyName": "Amesite Inc",
+              "tradingSymbol": "AMST",
+              "logo": "https://ailatapi.kz/media/logos/AMST.png",
+              "currency": "USD",
+              "shariahCheck": true,
+              "analysisDate": "2025-05-18T00:38:07.000Z",
+              "isCompliant": false,
+              "price": {
+                "price": 2.78,
+                "changePercent": -7.95
+              }
+            },     {
+              "id": 2864,
+              "companyName": "Amesite Inc",
+              "tradingSymbol": "AMST",
+              "logo": "https://ailatapi.kz/media/logos/AMST.png",
+              "currency": "USD",
+              "shariahCheck": true,
+              "analysisDate": "2025-05-18T00:38:07.000Z",
+              "isCompliant": false,
+              "price": {
+                "price": 2.78,
+                "changePercent": -7.95
+              }
+            },     {
+              "id": 2864,
+              "companyName": "Amesite Inc",
+              "tradingSymbol": "AMST",
+              "logo": "https://ailatapi.kz/media/logos/AMST.png",
+              "currency": "USD",
+              "shariahCheck": true,
+              "analysisDate": "2025-05-18T00:38:07.000Z",
+              "isCompliant": false,
+              "price": {
+                "price": 2.78,
+                "changePercent": -7.95
+              }
+            },     {
+              "id": 2864,
+              "companyName": "Amesite Inc",
+              "tradingSymbol": "AMST",
+              "logo": "https://ailatapi.kz/media/logos/AMST.png",
+              "currency": "USD",
+              "shariahCheck": true,
+              "analysisDate": "2025-05-18T00:38:07.000Z",
+              "isCompliant": false,
+              "price": {
+                "price": 2.78,
+                "changePercent": -7.95
+              }
+            },     {
+              "id": 2864,
+              "companyName": "Amesite Inc",
+              "tradingSymbol": "AMST",
+              "logo": "https://ailatapi.kz/media/logos/AMST.png",
+              "currency": "USD",
+              "shariahCheck": false,
+              "analysisDate": "2025-05-18T00:38:07.000Z",
+              "isCompliant": true,
+              "price": {
+                "price": 2.78,
+                "changePercent": -7.95
+              }
+            },     {
+              "id": 2864,
+              "companyName": "Amesite Inc",
+              "tradingSymbol": "AMST",
+              "logo": "https://ailatapi.kz/media/logos/AMST.png",
+              "currency": "USD",
+              "shariahCheck": true,
+              "analysisDate": "2025-05-18T00:38:07.000Z",
+              "isCompliant": false,
+              "price": {
+                "price": 2.78,
+                "changePercent": -7.95
+              }
+            },     {
+              "id": 2864,
+              "companyName": "Amesite Inc",
+              "tradingSymbol": "AMST",
+              "logo": "https://ailatapi.kz/media/logos/AMST.png",
+              "currency": "USD",
+              "shariahCheck": true,
+              "analysisDate": "2025-05-18T00:38:07.000Z",
+              "isCompliant": true,
+              "price": {
+                "price": 2.78,
+                "changePercent": -7.95
+              }
+            },     {
+              "id": 2864,
+              "companyName": "Amesite Inc",
+              "tradingSymbol": "AMST",
+              "logo": "https://ailatapi.kz/media/logos/AMST.png",
+              "currency": "USD",
+              "shariahCheck": true,
+              "analysisDate": "2025-05-18T00:38:07.000Z",
+              "isCompliant": false,
+              "price": {
+                "price": 2.78,
+                "changePercent": -7.95
+              }
+            }
+          ],
+          "meta": {
+            "count": 334
+          }
+        } as Map<String, dynamic>),
+      );
       final result = await ds.getList();
       print(result.statusCode);
       print(result.body);
