@@ -15,10 +15,33 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          "Stock Investments",
+          style: AppTextStyle.medium.copyWith(fontSize: 18),
+        ),
+        leading: GestureDetector(
+          onTap: () {},
+          child: Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: Colors.grey,
+
+              borderRadius: BorderRadius.circular(250),
+            ),
+            child: const Center(child: Icon(Icons.arrow_back, size: 28)),
+          ),
+        ),
+      ),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Padding(padding: EdgeInsets.symmetric(horizontal: 16),child: TextField(
+
+            ),),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               child: BlocBuilder<MainBloc, MainState>(
